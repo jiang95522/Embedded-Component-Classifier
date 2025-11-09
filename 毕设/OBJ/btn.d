@@ -1,0 +1,10 @@
+..\obj\btn.o: btn.c
+..\obj\btn.o: btn.h
+..\obj\btn.o: ..\SYSTEM\sys\sys.h
+..\obj\btn.o: ..\SYSTEM\sys\stm32h7xx.h
+..\obj\btn.o: ..\SYSTEM\sys\stm32h743xx.h
+..\obj\btn.o: ..\SYSTEM\sys\core_cm7.h
+..\obj\btn.o: D:\Keil\keil_5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\btn.o: ..\SYSTEM\sys\cmsis_compiler.h
+..\obj\btn.o: ..\SYSTEM\sys\cmsis_armcc.h
+..\obj\btn.o: ..\SYSTEM\sys\system_stm32h7xx.h
