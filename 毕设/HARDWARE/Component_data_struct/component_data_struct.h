@@ -6,7 +6,7 @@
 * @brief 元器件数据结构的定义和管理以及相应操作的实现（增删查改）
 * @version 1.0 （版本声明） 
 * @author jjh
-* @date  2025年11月8日 
+* @date  2025年11月8日 9
 */ 
 
 #define MAX_COMPONENT 100   //元器件最大数量
