@@ -1,2 +1,10 @@
 ..\obj\component_data_struct.o: ..\HARDWARE\Component_data_struct\component_data_struct.c
 ..\obj\component_data_struct.o: ..\HARDWARE\Component_data_struct\component_data_struct.h
+..\obj\component_data_struct.o: ..\SYSTEM\sys\sys.h
+..\obj\component_data_struct.o: ..\SYSTEM\sys\stm32h7xx.h
+..\obj\component_data_struct.o: ..\SYSTEM\sys\stm32h743xx.h
+..\obj\component_data_struct.o: ..\SYSTEM\sys\core_cm7.h
+..\obj\component_data_struct.o: D:\Keil\keil_5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\component_data_struct.o: ..\SYSTEM\sys\cmsis_compiler.h
+..\obj\component_data_struct.o: ..\SYSTEM\sys\cmsis_armcc.h
+..\obj\component_data_struct.o: ..\SYSTEM\sys\system_stm32h7xx.h
