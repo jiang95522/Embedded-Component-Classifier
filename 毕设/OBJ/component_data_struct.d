@@ -8,3 +8,5 @@
 ..\obj\component_data_struct.o: ..\SYSTEM\sys\cmsis_compiler.h
 ..\obj\component_data_struct.o: ..\SYSTEM\sys\cmsis_armcc.h
 ..\obj\component_data_struct.o: ..\SYSTEM\sys\system_stm32h7xx.h
+..\obj\component_data_struct.o: D:\Keil\keil_5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\component_data_struct.o: D:\Keil\keil_5\ARM\ARMCC\Bin\..\include\stdio.h

@@ -1,12 +1,14 @@
 #ifndef __COMPONENT_DATA_STRUCTH_H
 #define __COMPONENT_DATA_STRUCTH_H
 #include "sys.h"
+#include "string.h"
+#include "stdio.h"
 /** 
 * @file component_data_struct
 * @brief 元器件数据结构的定义和管理以及相应操作的实现（增删查改）
 * @version 1.0 （版本声明） 
 * @author jjh
-* @date  2025年11月8日 9
+* @date  2025年11月8日 
 */ 
 
 #define MAX_COMPONENT 100   //元器件最大数量
@@ -53,7 +55,7 @@ typedef struct component_db
 	
 }component_db;
 
-
+component_db component_classifier;   //整个元器件数据库
 
 #endif
 
