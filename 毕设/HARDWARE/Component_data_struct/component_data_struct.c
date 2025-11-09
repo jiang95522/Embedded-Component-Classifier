@@ -53,16 +53,35 @@ int find_category_index(component_db* db,const char * category_name)
 * @Description:添加新类别
 * @component_db*:数据库结构体指针
 * @category_name:类别名字
+* @return 添加成功：index，添加失败：-1 
 */
 int add_category(component_db* db,const char * category_name)
 {
-	if(db->current_categories>=MAX_CATEGORIES)
+	int index;
+	if(db->current_categories >= MAX_CATEGORIES)
 	{
 		printf("错误：类别数量达到上限！ \r\n");
 		return -1;
 	}
+	if(find_category_index(db,category_name) != -1)  
+	{
+		printf("错误：已有该类别！ \r\n");
+	}
+	index = find_category_available(db);
+	if(index == -1)
+	{
+		printf("错误：没有可用的类别空间！ \r\n");
+		return -1;
+	}
+	strncpy((char *)(db->categories[index].name), category_name, sizeof(db->categories[index].name) - 1);
+	db->categories[index].category_flag_empty=1;
+	db->categories[index].available_component_space=MAX_COMPONENT;
 	
+	db->current_categories++;
+	db->available_category_space=MAX_CATEGORIES-db->current_categories;
+	printf("成功添加类别：%s \r\n",category_name);
 	
+	return index;
 }
 
 
