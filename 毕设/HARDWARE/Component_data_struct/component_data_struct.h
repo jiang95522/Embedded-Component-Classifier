@@ -55,7 +55,21 @@ typedef struct component_db
 	
 }component_db;
 
-component_db component_classifier;   //整个元器件数据库
+//声明全局变量
+extern component_db component_classifier;   //整个元器件数据库
+
+//*************************函数*************************//
+void Init_component_db(component_db* db); //数据库初始化
+void Test_add_categoties(component_db* db); //测试添加新类别函数
+
+//*************************函数*************************//
+
+
+
+
+
+
+
 
 #endif
 

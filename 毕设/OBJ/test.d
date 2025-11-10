@@ -15,3 +15,5 @@
 ..\obj\test.o: ..\HARDWARE\LCD\lcd.h
 ..\obj\test.o: D:\Keil\keil_5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\test.o: ..\HARDWARE\W25QXX\w25qxx.h
+..\obj\test.o: ..\HARDWARE\Component_data_struct\component_data_struct.h
+..\obj\test.o: D:\Keil\keil_5\ARM\ARMCC\Bin\..\include\string.h

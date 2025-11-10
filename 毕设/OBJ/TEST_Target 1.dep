@@ -1,7 +1,7 @@
 Dependencies for Project 'TEST', Target 'Target 1': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
 F (.\startup_stm32h743xx.s)(0x5B248B97)(--cpu Cortex-M7.fp.dp -g --apcs=interwork -ID:\Keil\pack\Keil\STM32H7xx_DFP\4.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include--pd "__UVISION_VERSION SETA 536" --pd "STM32H743xx SETA 1"--list ..\obj\startup_stm32h743xx.lst --xref -o ..\obj\startup_stm32h743xx.o --depend ..\obj\startup_stm32h743xx.d)
-F (.\test.c)(0x690EF7AD)(-c --cpu Cortex-M7.fp.dp -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HARDWARE\LED -I ..\HARDWARE\KEY -I ..\HARDWARE\EXTI -I ..\HARDWARE\WDG -I ..\HARDWARE\TIMER -I ..\HARDWARE\TPAD -I ..\HARDWARE\OLED -I ..\HARDWARE\MPU -I ..\HARDWARE\LCD -I ..\HARDWARE\SDRAM -I ..\USMART -I ..\HARDWARE\RTC -I ..\HARDWARE\RNG -I ..\HARDWARE\WKUP -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\HARDWARE\DMA -I ..\HARDWARE\24CXX -I ..\HARDWARE\PCF8574 -I ..\HARDWARE\AP3216C -I ..\HARDWARE\QSPI -I ..\HARDWARE\W25QXX -I ..\USER -I ..\HARDWARE\Component_data_struct-ID:\Keil\pack\Keil\STM32H7xx_DFP\4.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="536" -DSTM32H743xx -DSTM32H743xx-o ..\obj\test.o --depend ..\obj\test.d)
+F (.\test.c)(0x6911599D)(-c --cpu Cortex-M7.fp.dp -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HARDWARE\LED -I ..\HARDWARE\KEY -I ..\HARDWARE\EXTI -I ..\HARDWARE\WDG -I ..\HARDWARE\TIMER -I ..\HARDWARE\TPAD -I ..\HARDWARE\OLED -I ..\HARDWARE\MPU -I ..\HARDWARE\LCD -I ..\HARDWARE\SDRAM -I ..\USMART -I ..\HARDWARE\RTC -I ..\HARDWARE\RNG -I ..\HARDWARE\WKUP -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\HARDWARE\DMA -I ..\HARDWARE\24CXX -I ..\HARDWARE\PCF8574 -I ..\HARDWARE\AP3216C -I ..\HARDWARE\QSPI -I ..\HARDWARE\W25QXX -I ..\USER -I ..\HARDWARE\Component_data_struct-ID:\Keil\pack\Keil\STM32H7xx_DFP\4.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="536" -DSTM32H743xx -DSTM32H743xx-o ..\obj\test.o --depend ..\obj\test.d)
 I (..\SYSTEM\sys\sys.h)(0x5B742FD5)
 I (..\SYSTEM\sys\stm32h7xx.h)(0x5A4CE934)
 I (..\SYSTEM\sys\stm32h743xx.h)(0x5A4CE934)
@@ -18,6 +18,8 @@ I (..\HARDWARE\MPU\mpu.h)(0x5B476BB8)
 I (..\HARDWARE\LCD\lcd.h)(0x6482A595)
 I (D:\Keil\keil_5\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (..\HARDWARE\W25QXX\w25qxx.h)(0x5B224411)
+I (..\HARDWARE\Component_data_struct\component_data_struct.h)(0x69115685)
+I (D:\Keil\keil_5\ARM\ARMCC\include\string.h)(0x6025237E)
 F (.\btn.c)(0x682C6B6B)(-c --cpu Cortex-M7.fp.dp -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HARDWARE\LED -I ..\HARDWARE\KEY -I ..\HARDWARE\EXTI -I ..\HARDWARE\WDG -I ..\HARDWARE\TIMER -I ..\HARDWARE\TPAD -I ..\HARDWARE\OLED -I ..\HARDWARE\MPU -I ..\HARDWARE\LCD -I ..\HARDWARE\SDRAM -I ..\USMART -I ..\HARDWARE\RTC -I ..\HARDWARE\RNG -I ..\HARDWARE\WKUP -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\HARDWARE\DMA -I ..\HARDWARE\24CXX -I ..\HARDWARE\PCF8574 -I ..\HARDWARE\AP3216C -I ..\HARDWARE\QSPI -I ..\HARDWARE\W25QXX -I ..\USER -I ..\HARDWARE\Component_data_struct-ID:\Keil\pack\Keil\STM32H7xx_DFP\4.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="536" -DSTM32H743xx -DSTM32H743xx-o ..\obj\btn.o --depend ..\obj\btn.d)
 I (btn.h)(0x682C4408)
 I (..\SYSTEM\sys\sys.h)(0x5B742FD5)
@@ -158,8 +160,8 @@ I (..\HARDWARE\QSPI\qspi.h)(0x5B224411)
 I (..\SYSTEM\delay\delay.h)(0x5B17D3D1)
 I (..\SYSTEM\usart\usart.h)(0x5B768AEA)
 I (D:\Keil\keil_5\ARM\ARMCC\include\stdio.h)(0x60252374)
-F (..\HARDWARE\Component_data_struct\component_data_struct.c)(0x6910900A)(-c --cpu Cortex-M7.fp.dp -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HARDWARE\LED -I ..\HARDWARE\KEY -I ..\HARDWARE\EXTI -I ..\HARDWARE\WDG -I ..\HARDWARE\TIMER -I ..\HARDWARE\TPAD -I ..\HARDWARE\OLED -I ..\HARDWARE\MPU -I ..\HARDWARE\LCD -I ..\HARDWARE\SDRAM -I ..\USMART -I ..\HARDWARE\RTC -I ..\HARDWARE\RNG -I ..\HARDWARE\WKUP -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\HARDWARE\DMA -I ..\HARDWARE\24CXX -I ..\HARDWARE\PCF8574 -I ..\HARDWARE\AP3216C -I ..\HARDWARE\QSPI -I ..\HARDWARE\W25QXX -I ..\USER -I ..\HARDWARE\Component_data_struct-ID:\Keil\pack\Keil\STM32H7xx_DFP\4.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="536" -DSTM32H743xx -DSTM32H743xx-o ..\obj\component_data_struct.o --depend ..\obj\component_data_struct.d)
-I (..\HARDWARE\Component_data_struct\component_data_struct.h)(0x69106FFA)
+F (..\HARDWARE\Component_data_struct\component_data_struct.c)(0x69115B64)(-c --cpu Cortex-M7.fp.dp -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HARDWARE\LED -I ..\HARDWARE\KEY -I ..\HARDWARE\EXTI -I ..\HARDWARE\WDG -I ..\HARDWARE\TIMER -I ..\HARDWARE\TPAD -I ..\HARDWARE\OLED -I ..\HARDWARE\MPU -I ..\HARDWARE\LCD -I ..\HARDWARE\SDRAM -I ..\USMART -I ..\HARDWARE\RTC -I ..\HARDWARE\RNG -I ..\HARDWARE\WKUP -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\HARDWARE\DMA -I ..\HARDWARE\24CXX -I ..\HARDWARE\PCF8574 -I ..\HARDWARE\AP3216C -I ..\HARDWARE\QSPI -I ..\HARDWARE\W25QXX -I ..\USER -I ..\HARDWARE\Component_data_struct-ID:\Keil\pack\Keil\STM32H7xx_DFP\4.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="536" -DSTM32H743xx -DSTM32H743xx-o ..\obj\component_data_struct.o --depend ..\obj\component_data_struct.d)
+I (..\HARDWARE\Component_data_struct\component_data_struct.h)(0x69115685)
 I (..\SYSTEM\sys\sys.h)(0x5B742FD5)
 I (..\SYSTEM\sys\stm32h7xx.h)(0x5A4CE934)
 I (..\SYSTEM\sys\stm32h743xx.h)(0x5A4CE934)

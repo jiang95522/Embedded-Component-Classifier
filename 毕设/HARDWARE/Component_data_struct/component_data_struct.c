@@ -1,5 +1,8 @@
 #include "component_data_struct.h"
 
+//定义全局变量
+component_db component_classifier;   //整个元器件数据库
+
 /** 
 * @Description:数据库初始化
 * @component_db*:数据库结构体指针
@@ -83,8 +86,36 @@ int add_category(component_db* db,const char * category_name)
 	
 	return index;
 }
-
-
+/** 
+* @Description:测试添加新类别函数
+* @component_db*:数据库结构体指针
+*/
+void Test_add_categoties(component_db* db)
+{
+	u8 i=0;
+	u8 j=0;
+	printf("当前类别个数 %d \r\n", (int)db->current_categories);
+	printf("剩余种类空间个数 %d \r\n", (int)db->available_category_space);
+	printf("元器件总数 %d \r\n", (int)db->total_components);
+	add_category(db, "电容");
+	add_category(db, "电阻");
+	add_category(db, "电感");
+	printf("当前类别个数 %d \r\n", (int)db->current_categories);
+	printf("剩余种类空间个数 %d \r\n", (int)db->available_category_space);
+	printf("元器件总数 %d \r\n", (int)db->total_components);
+	for(i=0;i<MAX_CATEGORIES;i++)
+	{
+		if(db->categories[i].category_flag_empty!=0)
+		{
+			j++;
+			printf("位置 %d 种类名称: %s \r\n",(int)i,db->categories[i].name);
+		}
+		if(j == db->current_categories)
+		{
+			break;
+		}
+	}
+}
 
 
 
