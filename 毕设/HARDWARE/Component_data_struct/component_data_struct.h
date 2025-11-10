@@ -38,7 +38,7 @@ typedef struct category
 	component components[MAX_COMPONENT];  //一种元器件的所有元器件 如电容类别 有最多一百种电容
 	u8 component_current_count;     		  //该种类现有元器件数量
 	u16 total_searches;             		  //该种类搜索总次数
-	u8 category_flag_empty;							  //是否为空标志位
+	u8 category_flag_empty;							  //是否为空标志位   1:fei kong  0: kong
 	u8 available_component_space;         //剩余元器件空间个数
 	
 }category;

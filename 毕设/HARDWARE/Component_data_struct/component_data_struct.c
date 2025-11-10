@@ -87,6 +87,27 @@ int add_category(component_db* db,const char * category_name)
 	return index;
 }
 /** 
+* @Description:删除类别
+* @component_db*:数据库结构体指针
+* @category_name:类别名字
+* @return 删除成功：index，删除失败：-1 
+*/
+int delete_category(component_db* db,const char * category_name)
+{
+	int index = find_category_index(db,category_name);
+	if(index == -1)
+	{
+		printf("错误：类别：%s 不存在 \r\n",category_name);
+		return -1;
+	}
+	db->current_categories--;
+	db->total_components -= db->categories[index].component_current_count;
+	db->categories[index].category_flag_empty=0;
+	db->available_category_space = MAX_CATEGORIES - db->current_categories;
+	printf("删除类别：%s 成功 \r\n",category_name);
+	return  1;
+}
+/** 
 * @Description:测试添加新类别函数
 * @component_db*:数据库结构体指针
 */
@@ -100,6 +121,22 @@ void Test_add_categoties(component_db* db)
 	add_category(db, "电容");
 	add_category(db, "电阻");
 	add_category(db, "电感");
+	printf("当前类别个数 %d \r\n", (int)db->current_categories);
+	printf("剩余种类空间个数 %d \r\n", (int)db->available_category_space);
+	printf("元器件总数 %d \r\n", (int)db->total_components);
+	for(i=0;i<MAX_CATEGORIES;i++)
+	{
+		if(db->categories[i].category_flag_empty!=0)
+		{
+			j++;
+			printf("位置 %d 种类名称: %s \r\n",(int)i,db->categories[i].name);
+		}
+		if(j == db->current_categories)
+		{
+			break;
+		}
+	}
+	delete_category(db,"电阻");
 	printf("当前类别个数 %d \r\n", (int)db->current_categories);
 	printf("剩余种类空间个数 %d \r\n", (int)db->available_category_space);
 	printf("元器件总数 %d \r\n", (int)db->total_components);
