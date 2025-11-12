@@ -49,6 +49,8 @@
 #ifndef SYSTEM_STM32H7XX_H
 #define SYSTEM_STM32H7XX_H
 
+#include "sys.h"
+
 #ifdef __cplusplus
  extern "C" {
 #endif

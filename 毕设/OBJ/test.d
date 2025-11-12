@@ -7,6 +7,7 @@
 ..\obj\test.o: ..\SYSTEM\sys\cmsis_compiler.h
 ..\obj\test.o: ..\SYSTEM\sys\cmsis_armcc.h
 ..\obj\test.o: ..\SYSTEM\sys\system_stm32h7xx.h
+..\obj\test.o: ..\SYSTEM\sys\sys.h
 ..\obj\test.o: ..\SYSTEM\delay\delay.h
 ..\obj\test.o: ..\HARDWARE\LED\led.h
 ..\obj\test.o: ..\SYSTEM\usart\usart.h

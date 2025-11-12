@@ -8,6 +8,7 @@
 ..\obj\w25qxx.o: ..\SYSTEM\sys\cmsis_compiler.h
 ..\obj\w25qxx.o: ..\SYSTEM\sys\cmsis_armcc.h
 ..\obj\w25qxx.o: ..\SYSTEM\sys\system_stm32h7xx.h
+..\obj\w25qxx.o: ..\SYSTEM\sys\sys.h
 ..\obj\w25qxx.o: ..\HARDWARE\QSPI\qspi.h
 ..\obj\w25qxx.o: ..\SYSTEM\delay\delay.h
 ..\obj\w25qxx.o: ..\SYSTEM\usart\usart.h

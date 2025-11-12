@@ -8,3 +8,4 @@
 ..\obj\btn.o: ..\SYSTEM\sys\cmsis_compiler.h
 ..\obj\btn.o: ..\SYSTEM\sys\cmsis_armcc.h
 ..\obj\btn.o: ..\SYSTEM\sys\system_stm32h7xx.h
+..\obj\btn.o: ..\SYSTEM\sys\sys.h

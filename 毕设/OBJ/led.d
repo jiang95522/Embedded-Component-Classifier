@@ -8,3 +8,4 @@
 ..\obj\led.o: ..\SYSTEM\sys\cmsis_compiler.h
 ..\obj\led.o: ..\SYSTEM\sys\cmsis_armcc.h
 ..\obj\led.o: ..\SYSTEM\sys\system_stm32h7xx.h
+..\obj\led.o: ..\SYSTEM\sys\sys.h

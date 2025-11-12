@@ -8,4 +8,5 @@
 ..\obj\sdram.o: ..\SYSTEM\sys\cmsis_compiler.h
 ..\obj\sdram.o: ..\SYSTEM\sys\cmsis_armcc.h
 ..\obj\sdram.o: ..\SYSTEM\sys\system_stm32h7xx.h
+..\obj\sdram.o: ..\SYSTEM\sys\sys.h
 ..\obj\sdram.o: ..\SYSTEM\delay\delay.h

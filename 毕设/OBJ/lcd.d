@@ -8,6 +8,7 @@
 ..\obj\lcd.o: ..\SYSTEM\sys\cmsis_compiler.h
 ..\obj\lcd.o: ..\SYSTEM\sys\cmsis_armcc.h
 ..\obj\lcd.o: ..\SYSTEM\sys\system_stm32h7xx.h
+..\obj\lcd.o: ..\SYSTEM\sys\sys.h
 ..\obj\lcd.o: D:\Keil\keil_5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\lcd.o: ..\HARDWARE\LCD\font.h
 ..\obj\lcd.o: ..\SYSTEM\usart\usart.h

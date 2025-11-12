@@ -8,3 +8,4 @@
 ..\obj\qspi.o: ..\SYSTEM\sys\cmsis_compiler.h
 ..\obj\qspi.o: ..\SYSTEM\sys\cmsis_armcc.h
 ..\obj\qspi.o: ..\SYSTEM\sys\system_stm32h7xx.h
+..\obj\qspi.o: ..\SYSTEM\sys\sys.h

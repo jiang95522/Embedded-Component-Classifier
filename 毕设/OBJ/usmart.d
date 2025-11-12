@@ -9,5 +9,6 @@
 ..\obj\usmart.o: ..\SYSTEM\sys\cmsis_compiler.h
 ..\obj\usmart.o: ..\SYSTEM\sys\cmsis_armcc.h
 ..\obj\usmart.o: ..\SYSTEM\sys\system_stm32h7xx.h
+..\obj\usmart.o: ..\SYSTEM\sys\sys.h
 ..\obj\usmart.o: ..\SYSTEM\usart\usart.h
 ..\obj\usmart.o: D:\Keil\keil_5\ARM\ARMCC\Bin\..\include\stdio.h

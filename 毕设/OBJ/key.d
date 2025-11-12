@@ -8,4 +8,5 @@
 ..\obj\key.o: ..\SYSTEM\sys\cmsis_compiler.h
 ..\obj\key.o: ..\SYSTEM\sys\cmsis_armcc.h
 ..\obj\key.o: ..\SYSTEM\sys\system_stm32h7xx.h
+..\obj\key.o: ..\SYSTEM\sys\sys.h
 ..\obj\key.o: ..\SYSTEM\delay\delay.h

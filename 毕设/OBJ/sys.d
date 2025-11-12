@@ -7,3 +7,4 @@
 ..\obj\sys.o: ..\SYSTEM\sys\cmsis_compiler.h
 ..\obj\sys.o: ..\SYSTEM\sys\cmsis_armcc.h
 ..\obj\sys.o: ..\SYSTEM\sys\system_stm32h7xx.h
+..\obj\sys.o: ..\SYSTEM\sys\sys.h

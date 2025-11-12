@@ -9,5 +9,6 @@
 ..\obj\usmart_config.o: ..\SYSTEM\sys\cmsis_compiler.h
 ..\obj\usmart_config.o: ..\SYSTEM\sys\cmsis_armcc.h
 ..\obj\usmart_config.o: ..\SYSTEM\sys\system_stm32h7xx.h
+..\obj\usmart_config.o: ..\SYSTEM\sys\sys.h
 ..\obj\usmart_config.o: ..\SYSTEM\delay\delay.h
 ..\obj\usmart_config.o: ..\HARDWARE\W25QXX\w25qxx.h

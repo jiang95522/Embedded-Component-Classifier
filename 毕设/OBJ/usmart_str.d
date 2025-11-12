@@ -8,4 +8,5 @@
 ..\obj\usmart_str.o: ..\SYSTEM\sys\cmsis_compiler.h
 ..\obj\usmart_str.o: ..\SYSTEM\sys\cmsis_armcc.h
 ..\obj\usmart_str.o: ..\SYSTEM\sys\system_stm32h7xx.h
+..\obj\usmart_str.o: ..\SYSTEM\sys\sys.h
 ..\obj\usmart_str.o: ..\USMART\usmart.h
