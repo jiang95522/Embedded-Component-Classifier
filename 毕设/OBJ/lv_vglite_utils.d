@@ -1,0 +1,5 @@
+..\obj\lv_vglite_utils.o: ..\LVGL\GUI\lvgl\src\draw\nxp\vglite\lv_vglite_utils.c
+..\obj\lv_vglite_utils.o: ..\LVGL\GUI\lvgl\src\draw\nxp\vglite\lv_vglite_utils.h
+..\obj\lv_vglite_utils.o: ..\LVGL\GUI\lvgl\src\draw\nxp\vglite\../../../lv_conf_internal.h
+..\obj\lv_vglite_utils.o: ..\LVGL\GUI\lvgl\src\draw\nxp\vglite\../../../lv_conf_kconfig.h
+..\obj\lv_vglite_utils.o: ..\LVGL\GUI\lvgl\examples\porting\../../lv_conf.h

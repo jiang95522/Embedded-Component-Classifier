@@ -1,0 +1,13 @@
+..\obj\lv_mqx.o: ..\LVGL\GUI\lvgl\src\osal\lv_mqx.c
+..\obj\lv_mqx.o: ..\LVGL\GUI\lvgl\src\osal\lv_os.h
+..\obj\lv_mqx.o: ..\LVGL\GUI\lvgl\src\osal\../lv_conf_internal.h
+..\obj\lv_mqx.o: ..\LVGL\GUI\lvgl\src\osal\../lv_conf_kconfig.h
+..\obj\lv_mqx.o: ..\LVGL\GUI\lvgl\examples\porting\../../lv_conf.h
+..\obj\lv_mqx.o: ..\LVGL\GUI\lvgl\src\osal\../misc/lv_types.h
+..\obj\lv_mqx.o: D:\Keil\keil_5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\lv_mqx.o: D:\Keil\keil_5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\lv_mqx.o: D:\Keil\keil_5\ARM\ARMCC\Bin\..\include\stdbool.h
+..\obj\lv_mqx.o: D:\Keil\keil_5\ARM\ARMCC\Bin\..\include\inttypes.h
+..\obj\lv_mqx.o: D:\Keil\keil_5\ARM\ARMCC\Bin\..\include\limits.h
+..\obj\lv_mqx.o: D:\Keil\keil_5\ARM\ARMCC\Bin\..\include\stdarg.h
+..\obj\lv_mqx.o: ..\LVGL\GUI\lvgl\src\osal\lv_os_none.h
