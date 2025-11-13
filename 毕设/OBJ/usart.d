@@ -10,3 +10,13 @@
 ..\obj\usart.o: ..\SYSTEM\sys\sys.h
 ..\obj\usart.o: ..\SYSTEM\usart\usart.h
 ..\obj\usart.o: D:\Keil\keil_5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\usart.o: ..\FreeRTOS\include\FreeRTOS.h
+..\obj\usart.o: D:\Keil\keil_5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\usart.o: ..\FreeRTOS\include\FreeRTOSConfig.h
+..\obj\usart.o: ..\FreeRTOS\include\projdefs.h
+..\obj\usart.o: ..\FreeRTOS\include\portable.h
+..\obj\usart.o: ..\FreeRTOS\include\deprecated_definitions.h
+..\obj\usart.o: ..\FreeRTOS\portable\RVDS\ARM_CM7\r0p1\portmacro.h
+..\obj\usart.o: ..\FreeRTOS\include\mpu_wrappers.h
+..\obj\usart.o: ..\FreeRTOS\include\task.h
+..\obj\usart.o: ..\FreeRTOS\include\list.h

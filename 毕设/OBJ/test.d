@@ -18,3 +18,13 @@
 ..\obj\test.o: ..\HARDWARE\W25QXX\w25qxx.h
 ..\obj\test.o: ..\HARDWARE\Component_data_struct\component_data_struct.h
 ..\obj\test.o: D:\Keil\keil_5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\test.o: ..\FreeRTOS\include\FreeRTOS.h
+..\obj\test.o: D:\Keil\keil_5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\test.o: ..\FreeRTOS\include\FreeRTOSConfig.h
+..\obj\test.o: ..\FreeRTOS\include\projdefs.h
+..\obj\test.o: ..\FreeRTOS\include\portable.h
+..\obj\test.o: ..\FreeRTOS\include\deprecated_definitions.h
+..\obj\test.o: ..\FreeRTOS\portable\RVDS\ARM_CM7\r0p1\portmacro.h
+..\obj\test.o: ..\FreeRTOS\include\mpu_wrappers.h
+..\obj\test.o: ..\FreeRTOS\include\task.h
+..\obj\test.o: ..\FreeRTOS\include\list.h

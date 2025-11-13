@@ -9,3 +9,13 @@
 ..\obj\delay.o: ..\SYSTEM\sys\cmsis_armcc.h
 ..\obj\delay.o: ..\SYSTEM\sys\system_stm32h7xx.h
 ..\obj\delay.o: ..\SYSTEM\sys\sys.h
+..\obj\delay.o: ..\FreeRTOS\include\FreeRTOS.h
+..\obj\delay.o: D:\Keil\keil_5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\delay.o: ..\FreeRTOS\include\FreeRTOSConfig.h
+..\obj\delay.o: ..\FreeRTOS\include\projdefs.h
+..\obj\delay.o: ..\FreeRTOS\include\portable.h
+..\obj\delay.o: ..\FreeRTOS\include\deprecated_definitions.h
+..\obj\delay.o: ..\FreeRTOS\portable\RVDS\ARM_CM7\r0p1\portmacro.h
+..\obj\delay.o: ..\FreeRTOS\include\mpu_wrappers.h
+..\obj\delay.o: ..\FreeRTOS\include\task.h
+..\obj\delay.o: ..\FreeRTOS\include\list.h

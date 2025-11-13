@@ -3,7 +3,8 @@
 ////////////////////////////////////////////////////////////////////////////////// 	 
 //如果使用ucos,则包括下面的头文件即可.
 #if SYSTEM_SUPPORT_OS
-#include "includes.h"					//ucos 使用	  
+#include "FreeRTOS.h"					//FreeRTOS使用	 
+#include "task.h" 
 #endif
 //////////////////////////////////////////////////////////////////////////////////	   
 //本程序只供学习使用，未经作者许可，不得用于其它任何用途
@@ -70,9 +71,7 @@ u16 USART_RX_STA=0;       //接收状态标记
 void USART1_IRQHandler(void)
 {
 	u8 res;	
-#if SYSTEM_SUPPORT_OS 		//如果SYSTEM_SUPPORT_OS为真，则需要支持OS.
-	OSIntEnter();    
-#endif
+ 
 	if(USART1->ISR&(1<<5))//接收到数据
 	{	 
 		res=USART1->RDR; 
@@ -95,9 +94,7 @@ void USART1_IRQHandler(void)
 		}  		 									     
 	} 
 	USART1->ICR|=1<<3;	//清除溢出错误,否则可能会卡死在串口中断服务函数里面
-#if SYSTEM_SUPPORT_OS 	//如果SYSTEM_SUPPORT_OS为真，则需要支持OS.
-	OSIntExit();  											 
-#endif
+ 
 } 
 #endif										 
 //初始化IO 串口1
