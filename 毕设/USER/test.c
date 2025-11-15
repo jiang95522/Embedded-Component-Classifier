@@ -15,6 +15,10 @@
 #include "lv_init.h"
 #include "lv_port_disp_template.h"
 #include "lv_port_indev_template.h"
+
+#include "gui_guider.h"
+#include "events_init.h"
+lv_ui guider_ui;
 //************************************************
 //任务优先级
 #define START_TASK_PRIO		1
@@ -59,7 +63,8 @@ int main(void)
 	lv_init();
 	lv_port_disp_init();
 	lv_port_indev_init();
-	
+	setup_ui(&guider_ui);
+  events_init(&guider_ui);
     //创建开始任务
     xTaskCreate((TaskFunction_t )start_task,            //任务函数
                 (const char*    )"start_task",          //任务名称
@@ -115,13 +120,6 @@ void lvgl_task(void *pvParameters)//O0
 	lv_obj_set_style_text_color(label,lv_color_hex(0x5084db),LV_STATE_DEFAULT);  //标签颜色
 	lv_label_set_text(label,"speed = #ff0000 %d#");
 	lv_obj_align(label,LV_ALIGN_CENTER,0,-lcddev.height/3);
-	
-	lv_obj_t* btn=NULL;  //按钮
-	btn=lv_btn_create(lv_scr_act());
-	lv_obj_set_size(btn,lcddev.width/12,lcddev.height/6);
-	lv_obj_align(btn,LV_ALIGN_CENTER,lcddev.width/3,0);
-	lv_obj_set_style_bg_color(btn,lv_color_hex(0xffe1d4),LV_STATE_PRESSED);  
-	lv_obj_add_flag(btn,LV_OBJ_FLAG_CHECKABLE);
 	while(1)
 	{
 		TickType_t count = xTaskGetTickCount();

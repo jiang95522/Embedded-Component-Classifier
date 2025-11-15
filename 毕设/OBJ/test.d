@@ -211,3 +211,5 @@
 ..\obj\test.o: ..\LVGL\GUI\lvgl\src\../src/lv_api_map_v9_1.h
 ..\obj\test.o: ..\LVGL\GUI\lvgl\examples\porting\lv_port_disp_template.h
 ..\obj\test.o: ..\LVGL\GUI\lvgl\examples\porting\lv_port_indev_template.h
+..\obj\test.o: ..\LVGL\GUI_APP\src\generated\gui_guider.h
+..\obj\test.o: ..\LVGL\GUI_APP\src\generated\events_init.h

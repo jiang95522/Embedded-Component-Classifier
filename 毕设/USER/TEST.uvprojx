@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>STM32H743xx</Define>
               <Undefine></Undefine>
-              <IncludePath>..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\HARDWARE\LED;..\HARDWARE\KEY;..\HARDWARE\EXTI;..\HARDWARE\WDG;..\HARDWARE\TIMER;..\HARDWARE\TPAD;..\HARDWARE\OLED;..\HARDWARE\MPU;..\HARDWARE\LCD;..\HARDWARE\SDRAM;..\USMART;..\HARDWARE\RTC;..\HARDWARE\RNG;..\HARDWARE\WKUP;..\HARDWARE\ADC;..\HARDWARE\DAC;..\HARDWARE\DMA;..\HARDWARE\24CXX;..\HARDWARE\PCF8574;..\HARDWARE\AP3216C;..\HARDWARE\QSPI;..\HARDWARE\W25QXX;..\USER;..\HARDWARE\Component_data_struct;..\FreeRTOS\portable\RVDS\ARM_CM7\r0p1;..\FreeRTOS;..\FreeRTOS\portable\MemMang;..\FreeRTOS\include;..\LVGL\GUI\lvgl\src;..\LVGL\GUI\lvgl;..\LVGL\GUI\lvgl\examples\porting;..\LVGL\GUI\lvgl\src\core;..\HARDWARE\TOUCH</IncludePath>
+              <IncludePath>..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\HARDWARE\LED;..\HARDWARE\KEY;..\HARDWARE\EXTI;..\HARDWARE\WDG;..\HARDWARE\TIMER;..\HARDWARE\TPAD;..\HARDWARE\OLED;..\HARDWARE\MPU;..\HARDWARE\LCD;..\HARDWARE\SDRAM;..\USMART;..\HARDWARE\RTC;..\HARDWARE\RNG;..\HARDWARE\WKUP;..\HARDWARE\ADC;..\HARDWARE\DAC;..\HARDWARE\DMA;..\HARDWARE\24CXX;..\HARDWARE\PCF8574;..\HARDWARE\AP3216C;..\HARDWARE\QSPI;..\HARDWARE\W25QXX;..\USER;..\HARDWARE\Component_data_struct;..\FreeRTOS\portable\RVDS\ARM_CM7\r0p1;..\FreeRTOS;..\FreeRTOS\portable\MemMang;..\FreeRTOS\include;..\LVGL\GUI\lvgl\src;..\LVGL\GUI\lvgl;..\LVGL\GUI\lvgl\examples\porting;..\LVGL\GUI\lvgl\src\core;..\HARDWARE\TOUCH;..\LVGL\GUI_APP\src\custom;..\LVGL\GUI_APP\src\generated;..\LVGL\GUI_APP\src\generated\guider_customer_fonts;..\LVGL\GUI_APP\src\generated\guider_fonts;..\LVGL\GUI_APP\src\generated\images</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -2237,6 +2237,91 @@
               <FileName>lv_init.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\LVGL\GUI\lvgl\src\lv_init.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>guiguider</GroupName>
+          <Files>
+            <File>
+              <FileName>events_init.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\LVGL\GUI_APP\src\generated\events_init.c</FilePath>
+            </File>
+            <File>
+              <FileName>gui_guider.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\LVGL\GUI_APP\src\generated\gui_guider.c</FilePath>
+            </File>
+            <File>
+              <FileName>setup_scr_screen.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\LVGL\GUI_APP\src\generated\setup_scr_screen.c</FilePath>
+            </File>
+            <File>
+              <FileName>widgets_init.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\LVGL\GUI_APP\src\generated\widgets_init.c</FilePath>
+            </File>
+            <File>
+              <FileName>_back_ground_RGB565A8_480x320.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\LVGL\GUI_APP\src\generated\images\_back_ground_RGB565A8_480x320.c</FilePath>
+            </File>
+            <File>
+              <FileName>_back_RGB565A8_480x320.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\LVGL\GUI_APP\src\generated\images\_back_RGB565A8_480x320.c</FilePath>
+            </File>
+            <File>
+              <FileName>_cankaotu_RGB565A8_480x300.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\LVGL\GUI_APP\src\generated\images\_cankaotu_RGB565A8_480x300.c</FilePath>
+            </File>
+            <File>
+              <FileName>_category_back_RGB565A8_480x320.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\LVGL\GUI_APP\src\generated\images\_category_back_RGB565A8_480x320.c</FilePath>
+            </File>
+            <File>
+              <FileName>_component_RGB565A8_33x27.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\LVGL\GUI_APP\src\generated\images\_component_RGB565A8_33x27.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_font_montserratMedium_12.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\LVGL\GUI_APP\src\generated\guider_fonts\lv_font_montserratMedium_12.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_font_montserratMedium_16.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\LVGL\GUI_APP\src\generated\guider_fonts\lv_font_montserratMedium_16.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_font_montserratMedium_18.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\LVGL\GUI_APP\src\generated\guider_fonts\lv_font_montserratMedium_18.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_font_montserratMedium_20.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\LVGL\GUI_APP\src\generated\guider_fonts\lv_font_montserratMedium_20.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_font_montserratMedium_25.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\LVGL\GUI_APP\src\generated\guider_fonts\lv_font_montserratMedium_25.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_font_montserratMedium_28.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\LVGL\GUI_APP\src\generated\guider_fonts\lv_font_montserratMedium_28.c</FilePath>
+            </File>
+            <File>
+              <FileName>custom.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\LVGL\GUI_APP\src\custom\custom.c</FilePath>
             </File>
           </Files>
         </Group>
