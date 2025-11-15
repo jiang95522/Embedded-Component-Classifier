@@ -1,7 +1,7 @@
 #include "component_data_struct.h"
 
 //定义全局变量
-component_db component_classifier;   //整个元器件数据库
+component_db component_classifier ;//__attribute__((at(0xc04ee000)));  //整个元器件数据库
 
 /** 
 * @Description:数据库初始化

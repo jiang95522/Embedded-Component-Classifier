@@ -48,7 +48,6 @@ TaskHandle_t Lvgl_Task_Handler;
 void lvgl_task(void *pvParameters);
 //******************************************
 // 1
-int i=0;
 int main(void)
 { 
 	Stm32_Clock_Init(160,5,2,4);	//设置时钟,400Mhz
@@ -56,8 +55,8 @@ int main(void)
 	uart_init(100,115200);			//串口初始化为115200  
 	W25QXX_Init();					//W25QXX初始化
 	
-	Init_component_db(&component_classifier); //数据库初始化
-	Test_add_categoties(&component_classifier); //测试添加新类别函数
+//	Init_component_db(&component_classifier); //数据库初始化
+//	Test_add_categoties(&component_classifier); //测试添加新类别函数
 	SDRAM_Init();
 	LCD_Display_Dir(1);								//设置横屏
 	lv_init();
@@ -123,15 +122,14 @@ void lvgl_task(void *pvParameters)//O0
 	while(1)
 	{
 		TickType_t count = xTaskGetTickCount();
-		vTaskDelay(100);
+		vTaskDelay(10);
 		lv_timer_handler();
-		lv_label_set_text_fmt(label,"speed %d  %d \r\n",count,i);
-		printf("lvgl移植测试 %d  %d \r\n",count,i);
+		lv_label_set_text_fmt(label,"speed %d \r\n",count);
+//		printf("lvgl移植测试 %d  %d \r\n",count,i);
 	}
 }
 void vApplicationTickHook(void)
 {
-	i++;
 	lv_tick_inc(1); // 1ms
 }
 
