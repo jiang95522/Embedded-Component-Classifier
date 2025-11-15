@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>STM32H743xx</Define>
               <Undefine></Undefine>
-              <IncludePath>..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\HARDWARE\LED;..\HARDWARE\KEY;..\HARDWARE\EXTI;..\HARDWARE\WDG;..\HARDWARE\TIMER;..\HARDWARE\TPAD;..\HARDWARE\OLED;..\HARDWARE\MPU;..\HARDWARE\LCD;..\HARDWARE\SDRAM;..\USMART;..\HARDWARE\RTC;..\HARDWARE\RNG;..\HARDWARE\WKUP;..\HARDWARE\ADC;..\HARDWARE\DAC;..\HARDWARE\DMA;..\HARDWARE\24CXX;..\HARDWARE\PCF8574;..\HARDWARE\AP3216C;..\HARDWARE\QSPI;..\HARDWARE\W25QXX;..\USER;..\HARDWARE\Component_data_struct;..\FreeRTOS\portable\RVDS\ARM_CM7\r0p1;..\FreeRTOS;..\FreeRTOS\portable\MemMang;..\FreeRTOS\include;..\LVGL\GUI\lvgl\src;..\LVGL\GUI\lvgl;..\LVGL\GUI\lvgl\examples\porting;..\LVGL\GUI\lvgl\src\core</IncludePath>
+              <IncludePath>..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\HARDWARE\LED;..\HARDWARE\KEY;..\HARDWARE\EXTI;..\HARDWARE\WDG;..\HARDWARE\TIMER;..\HARDWARE\TPAD;..\HARDWARE\OLED;..\HARDWARE\MPU;..\HARDWARE\LCD;..\HARDWARE\SDRAM;..\USMART;..\HARDWARE\RTC;..\HARDWARE\RNG;..\HARDWARE\WKUP;..\HARDWARE\ADC;..\HARDWARE\DAC;..\HARDWARE\DMA;..\HARDWARE\24CXX;..\HARDWARE\PCF8574;..\HARDWARE\AP3216C;..\HARDWARE\QSPI;..\HARDWARE\W25QXX;..\USER;..\HARDWARE\Component_data_struct;..\FreeRTOS\portable\RVDS\ARM_CM7\r0p1;..\FreeRTOS;..\FreeRTOS\portable\MemMang;..\FreeRTOS\include;..\LVGL\GUI\lvgl\src;..\LVGL\GUI\lvgl;..\LVGL\GUI\lvgl\examples\porting;..\LVGL\GUI\lvgl\src\core;..\HARDWARE\TOUCH</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -477,6 +477,31 @@
               <FileName>component_data_struct.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\HARDWARE\Component_data_struct\component_data_struct.c</FilePath>
+            </File>
+            <File>
+              <FileName>ctiic.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\TOUCH\ctiic.c</FilePath>
+            </File>
+            <File>
+              <FileName>ft5206.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\TOUCH\ft5206.c</FilePath>
+            </File>
+            <File>
+              <FileName>gt9147.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\TOUCH\gt9147.c</FilePath>
+            </File>
+            <File>
+              <FileName>gt9271.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\TOUCH\gt9271.c</FilePath>
+            </File>
+            <File>
+              <FileName>touch.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\TOUCH\touch.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -2202,6 +2227,16 @@
               <FileName>lv_win.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\LVGL\GUI\lvgl\src\widgets\win\lv_win.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>lvgl\src</GroupName>
+          <Files>
+            <File>
+              <FileName>lv_init.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\LVGL\GUI\lvgl\src\lv_init.c</FilePath>
             </File>
           </Files>
         </Group>
